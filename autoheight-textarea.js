@@ -1,11 +1,12 @@
+/**
+ * テキストエリアのサイズを、内部サイズに合わせて自動で変更する
+ */
 window.addEventListener("DOMContentLoaded",function(){
 
 	const targetA = document.querySelectorAll(".la_eTrigger_s688923984632");
 
 	if( targetA ){
-		/**
-		 * テキストエリアのサイズを、内部サイズに合わせて自動で変更する
-		 */
+
 		Array.from(targetA, e=>{
 			e.addEventListener("input",()=>{
 				const textarea = e;
